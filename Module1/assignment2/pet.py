@@ -7,7 +7,7 @@ class Pet:
 
     # Made the describe method that returns an f string containing the name, age, and species.
     def describe(self):
-        return (f'{self.name} is a {self.age}-year-old-{self.species}')
+        return (f'{self.name} is a {self.age}-year-old-{self.species}\n')
     
 # Made the pets list
 pets = [
