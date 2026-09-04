@@ -13,22 +13,21 @@ def getTextList():
         textList = cleanText.split()
         return (textList)
 
-
 def getTextDictionary():
-    # Created an empty dictionary and iterated over the list, assigned the words to the dictionary as a key, and set the value to 1.
+    # Created an empty dictionary and iterated over the list, if word is in the dictionary then the value is increased by 1, else the dictionary assigns the key the value 1.
     textDict = {}
+
     for word in getTextList():
-        textDict[word] = 1 
+        if word in textDict:
+            textDict[word] += 1
+        else:
+            textDict[word] = 1
 
     return (textDict)
 
-    
-
-
 def main():
-    # Print statement for testing.
+    # Print statement
     Count = getTextDictionary()
     print(Count)
-
 
 main()
