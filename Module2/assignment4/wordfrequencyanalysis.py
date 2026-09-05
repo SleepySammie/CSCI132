@@ -27,7 +27,8 @@ def getTextDictionary():
 
 def main():
     # Print statement
-    Count = getTextDictionary()
-    print(Count)
+    finalDict = getTextDictionary()
+    for k, v in finalDict.items():
+        print(f'{k}: {v}\n')
 
 main()
