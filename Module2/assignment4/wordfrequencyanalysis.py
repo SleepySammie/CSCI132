@@ -29,6 +29,6 @@ def main():
     # Print statement
     finalDict = getTextDictionary()
     for k, v in finalDict.items():
-        print(f'{k}: {v}\n')
+        print(f'{k}: {v}')
 
 main()
