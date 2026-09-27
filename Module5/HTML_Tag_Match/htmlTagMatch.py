@@ -8,3 +8,20 @@ def checkTags(htmlStr):
         else:
             if s.is_empty():
                 return False
+
+def main():
+    checkTags(test_balanced)
+
+    test_balanced = """<html>
+    <head>
+        <title>
+            Example
+        </title>
+    </head>
+    
+    <body>
+        <h1>Hello, world</h1>
+    </body>
+    </html>
+    """
+    
