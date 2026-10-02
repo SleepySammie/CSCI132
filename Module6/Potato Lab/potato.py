@@ -1,3 +1,4 @@
+import random
 from pythonds3.basic import Queue
 
 
@@ -15,4 +16,4 @@ def hot_potato(name_list, num):
     return sim_queue.dequeue()
 
 
-print(hot_potato(["Bill", "David", "Susan", "Jane", "Kent", "Brad"], 5))
+print(hot_potato(["Bill", "David", "Susan", "Jane", "Kent", "Brad"], random.randrange (1, 10)))
