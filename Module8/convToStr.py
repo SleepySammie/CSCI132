@@ -5,4 +5,5 @@ def to_str(n, base):
     else:
         return to_str(n // base, base) + convert_string[n % base]
 
-print(to_str(1453, 16))
+strVal = to_str(11, 3)
+print(f'{strVal} is of type {type(strVal)}')
