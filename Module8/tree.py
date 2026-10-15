@@ -1,7 +1,7 @@
 import turtle
 
-MIN_BRANCH_LEN = 5
-BRANCH_DELTA = 15
+MIN_BRANCH_LEN = 2
+BRANCH_DELTA = 10
 
 
 def tree(branch_len, t):
@@ -22,7 +22,8 @@ def main():
     t.backward(100)
     t.down()
     t.color("green")
-    tree(75, t)
+    t.speed(1)
+    tree(100, t)
     my_win.exitonclick()
 
 main()
